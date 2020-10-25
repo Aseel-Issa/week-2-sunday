@@ -105,17 +105,17 @@ function task_2(){
     // build an array of two pets
     let pets = [firstPet, secondPet]
     console.log("build an array of two pets")
-    console.log(pets)
+    console.log(JSON.parse(JSON.stringify(pets)))
 
     // update firstPet to be chick instead of a dog
     pets[0].type = "chick"
     console.log("update firstPet to be chick instead of a dog")
-    console.log(pets)
+    console.log(JSON.parse(JSON.stringify(pets)))
 
     // delete the last pet
     pets.splice(1,1)
     console.log("delete the last pet")
-    console.log(pets)
+    console.log(JSON.parse(JSON.stringify(pets)))
 
 
 }
@@ -144,17 +144,17 @@ function task_3(){
     // build an array of two pets
     let pets = [firstPet, secondPet]
     console.log("build an array of two pets")
-    console.log(pets)
+    console.log(console.log(JSON.parse(JSON.stringify(pets))))
 
     // build another array of two pets
     let newPets = [thirdPet, fourthPet]
     console.log("build an array of two new pets")
-    console.log(newPets)
+    console.log(console.log(JSON.parse(JSON.stringify(newPets))))
 
     // add the newPets array to the pets array
     pets.push(...newPets)
     console.log("add the newPets array to the pets array")
-    console.log(pets)
+    console.log(console.log(JSON.parse(JSON.stringify(pets))))
 
 }
 
